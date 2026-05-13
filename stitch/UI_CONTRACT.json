@@ -1,0 +1,938 @@
+[
+  {
+    "screenId": "4c3c50e2cfaf4dbd9806d4baa516309c",
+    "screenTitle": "Game Over",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "TRY AGAIN",
+        "line": 149
+      },
+      {
+        "type": "button",
+        "label": "MAIN MENU",
+        "line": 153
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "TRY AGAIN",
+        "line": 149
+      },
+      {
+        "type": "button",
+        "label": "MAIN MENU",
+        "line": 153
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 2,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "30cf1e5903df40a6b95412d0c45b78c0",
+    "screenTitle": "Main Menu",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "START NEW GAME",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "SETTINGS",
+        "line": 180
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 202
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 203
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 204
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "START NEW GAME",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 172
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "SETTINGS",
+        "line": 180
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "2455adfd7d8147dcbd3db93ec6c44364",
+    "screenTitle": "Pause Overlay",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 225
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 196
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "EXIT TO MENU",
+        "line": 206
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 225
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 227
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 161
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 164
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 196
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "EXIT TO MENU",
+        "line": 206
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "1767fa80227e45678da125a75bfdb40c",
+    "screenTitle": "Game Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 104
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 105
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 106
+      },
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "LOGS",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 215
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 217
+      },
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 110
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "REBOOT SYSTEM",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "START",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 205
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 103
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 104
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 105
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 106
+      },
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 125
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "LOGS",
+        "href": "#",
+        "line": 133
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 137
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 215
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 216
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 217
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 110
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "REBOOT SYSTEM",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "START",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 201
+      },
+      {
+        "type": "button",
+        "label": "RESTART",
+        "line": 205
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 17,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "9da3e78b5ddd4807b8b931fcfab9289c",
+    "screenTitle": "Game Options",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 108
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 109
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 227
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 228
+      },
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 114
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "RESET HIGH SCORE CONFIRM PURGE",
+        "line": 206
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 144
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 153
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 174
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 179
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 184
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "GAME",
+        "href": "#",
+        "line": 108
+      },
+      {
+        "type": "link",
+        "label": "MENU",
+        "href": "#",
+        "line": 109
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 110
+      },
+      {
+        "type": "link",
+        "label": "SETTINGS",
+        "href": "#",
+        "line": 111
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 227
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 228
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 114
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "RESET HIGH SCORE CONFIRM PURGE",
+        "line": 206
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 144
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 153
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 169
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 174
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 179
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 184
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "c18b393f7fad442b928a8ff2b0beba6b",
+    "screenTitle": "Controls Help",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 244
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 245
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 246
+      },
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 251
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 255
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 259
+      },
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 104
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "REBOOT SYSTEM",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "ACKNOWLEDGE DIRECTIVES",
+        "line": 231
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 123
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM",
+        "href": "#",
+        "line": 129
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Privacy Policy",
+        "href": "#",
+        "line": 244
+      },
+      {
+        "type": "link",
+        "label": "Service Status",
+        "href": "#",
+        "line": 245
+      },
+      {
+        "type": "link",
+        "label": "Documentation",
+        "href": "#",
+        "line": 246
+      },
+      {
+        "type": "link",
+        "label": "DASHBOARD",
+        "href": "#",
+        "line": 251
+      },
+      {
+        "type": "link",
+        "label": "CONTROLS",
+        "href": "#",
+        "line": 255
+      },
+      {
+        "type": "link",
+        "label": "CONFIG",
+        "href": "#",
+        "line": 259
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "monitoring",
+        "line": 104
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 107
+      },
+      {
+        "type": "button",
+        "label": "REBOOT SYSTEM",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "ACKNOWLEDGE DIRECTIVES",
+        "line": 231
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 16,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
