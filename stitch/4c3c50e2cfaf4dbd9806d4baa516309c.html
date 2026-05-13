@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNAKE SUPERVISOR DOMGUARD - CRITICAL SYSTEM FAILURE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdad5",
+                        "on-secondary-container": "#abb9d2",
+                        "surface-container-high": "#242c24",
+                        "surface-tint": "#4ae176",
+                        "surface-variant": "#2f372e",
+                        "background": "#0e150e",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#2a322a",
+                        "primary-container": "#22c55e",
+                        "on-primary": "#003915",
+                        "outline": "#869585",
+                        "on-surface-variant": "#bccbb9",
+                        "on-tertiary-fixed": "#410001",
+                        "secondary-fixed": "#d5e3fd",
+                        "surface-dim": "#0e150e",
+                        "surface-container-highest": "#2f372e",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "secondary-container": "#3c4a5e",
+                        "inverse-primary": "#006e2f",
+                        "on-primary-fixed": "#002109",
+                        "surface-bright": "#333b33",
+                        "on-tertiary": "#60130d",
+                        "inverse-surface": "#dce5d9",
+                        "on-surface": "#dce5d9",
+                        "surface-container-lowest": "#091009",
+                        "on-secondary": "#233144",
+                        "on-primary-container": "#004b1e",
+                        "primary": "#4be277",
+                        "primary-fixed-dim": "#4ae176",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-tertiary-container": "#76231b",
+                        "tertiary": "#ffb5ab",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#ff8b7c",
+                        "on-primary-fixed-variant": "#005321",
+                        "surface": "#0e150e",
+                        "secondary": "#b9c7e0",
+                        "surface-container": "#1a221a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#7f2a21",
+                        "outline-variant": "#3d4a3d",
+                        "primary-fixed": "#6bff8f",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-background": "#dce5d9",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161d16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding": "24px",
+                        "board-max-width": "800px",
+                        "touch-target": "44px",
+                        "unit": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "status-number": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-base": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "status-number": ["20px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-base": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(61, 74, 61, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(61, 74, 61, 0.2) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-base text-body-base overflow-hidden">
+<!-- Suppressed TopAppBar & SideNav for Transactional Screen (Game Over) -->
+<!-- Main Canvas (Game Over Screen) -->
+<main class="flex-grow flex items-center justify-center relative w-full h-full p-container-padding">
+<!-- Blurred Background Simulator -->
+<div class="absolute inset-0 z-0 bg-surface-container-low grid-bg">
+<!-- Simulated Snake Game Artifacts in Background -->
+<div class="absolute top-[20%] left-[30%] w-8 h-8 bg-outline-variant opacity-20 border border-outline"></div>
+<div class="absolute top-[20%] left-[35%] w-8 h-8 bg-outline-variant opacity-20 border border-outline"></div>
+<div class="absolute top-[20%] left-[40%] w-8 h-8 bg-outline-variant opacity-20 border border-outline"></div>
+<div class="absolute top-[25%] left-[40%] w-8 h-8 bg-outline-variant opacity-20 border border-outline"></div>
+</div>
+<div class="absolute inset-0 z-0 bg-background/80 backdrop-blur-sm"></div>
+<!-- Game Over Modal -->
+<div class="z-10 bg-surface-container border border-error max-w-[600px] w-full p-8 shadow-[0_0_20px_rgba(255,180,171,0.1)] flex flex-col items-center text-center relative">
+<!-- Warning Header -->
+<div class="flex items-center gap-2 text-error mb-2 animate-pulse">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label-caps text-label-caps tracking-widest text-error">SYSTEM BREACH DETECTED</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">warning</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-error mb-8 uppercase tracking-tighter">CRITICAL FAILURE</h1>
+<!-- High Score Badge -->
+<div class="bg-primary/20 border border-primary px-4 py-2 mb-8 inline-flex items-center gap-2 animate-bounce">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">NEW HIGH SCORE!</span>
+</div>
+<!-- Stats Bento Grid -->
+<div class="grid grid-cols-2 gap-4 w-full mb-8">
+<div class="bg-surface-variant border border-outline-variant p-4 flex flex-col items-center justify-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">FINAL SCORE</span>
+<span class="font-status-number text-[48px] leading-none font-bold text-on-surface">14,250</span>
+</div>
+<div class="bg-surface-variant border border-outline-variant p-4 flex flex-col items-center justify-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">MAX LENGTH</span>
+<span class="font-status-number text-[48px] leading-none font-bold text-on-surface">84</span>
+</div>
+<div class="bg-surface-variant border border-outline-variant p-4 flex flex-col items-center justify-center col-span-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-2">RUNTIME (CYCLES)</span>
+<span class="font-status-number text-status-number text-secondary">04:12:89</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="w-full flex flex-col sm:flex-row gap-4 mt-4">
+<button class="flex-1 h-touch-target bg-on-surface text-surface font-label-caps text-label-caps tracking-widest flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary transition-colors border border-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background group">
+<span class="material-symbols-outlined group-hover:animate-spin">refresh</span>
+                    TRY AGAIN
+                </button>
+<button class="flex-1 h-touch-target bg-transparent text-on-surface border border-outline-variant font-label-caps text-label-caps tracking-widest flex items-center justify-center gap-2 hover:bg-surface-variant transition-colors focus:outline-none focus:ring-2 focus:ring-on-surface focus:ring-offset-2 focus:ring-offset-background">
+<span class="material-symbols-outlined">grid_view</span>
+                    MAIN MENU
+                </button>
+</div>
+<!-- Terminal Decor -->
+<div class="absolute bottom-2 left-2 right-2 text-left font-label-caps text-[10px] text-outline-variant opacity-50 flex justify-between">
+<span>ERR_CODE: 0x4F_COLLISION</span>
+<span>DOMGUARD_OS_v2.4</span>
+</div>
+</div>
+</main>
+</body></html>

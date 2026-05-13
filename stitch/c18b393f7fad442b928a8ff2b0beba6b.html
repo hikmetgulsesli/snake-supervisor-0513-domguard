@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNAKE SUPERVISOR DOMGUARD - CONTROLS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdad5",
+                        "on-secondary-container": "#abb9d2",
+                        "surface-container-high": "#242c24",
+                        "surface-tint": "#4ae176",
+                        "surface-variant": "#2f372e",
+                        "background": "#0e150e",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#2a322a",
+                        "primary-container": "#22c55e",
+                        "on-primary": "#003915",
+                        "outline": "#869585",
+                        "on-surface-variant": "#bccbb9",
+                        "on-tertiary-fixed": "#410001",
+                        "secondary-fixed": "#d5e3fd",
+                        "surface-dim": "#0e150e",
+                        "surface-container-highest": "#2f372e",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "secondary-container": "#3c4a5e",
+                        "inverse-primary": "#006e2f",
+                        "on-primary-fixed": "#002109",
+                        "surface-bright": "#333b33",
+                        "on-tertiary": "#60130d",
+                        "inverse-surface": "#dce5d9",
+                        "on-surface": "#dce5d9",
+                        "surface-container-lowest": "#091009",
+                        "on-secondary": "#233144",
+                        "on-primary-container": "#004b1e",
+                        "primary": "#4be277",
+                        "primary-fixed-dim": "#4ae176",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-tertiary-container": "#76231b",
+                        "tertiary": "#ffb5ab",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#ff8b7c",
+                        "on-primary-fixed-variant": "#005321",
+                        "surface": "#0e150e",
+                        "secondary": "#b9c7e0",
+                        "surface-container": "#1a221a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#7f2a21",
+                        "outline-variant": "#3d4a3d",
+                        "primary-fixed": "#6bff8f",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-background": "#dce5d9",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161d16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding": "24px",
+                        "board-max-width": "800px",
+                        "touch-target": "44px",
+                        "unit": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "status-number": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-base": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "status-number": ["20px", {"lineHeight": "1.0", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-base": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-base">
+<!-- TopAppBar (Hidden on md) -->
+<header class="md:hidden bg-surface-container dark:bg-surface-container flex justify-between items-center px-container-padding h-touch-target w-full fixed top-0 z-50 border-b-2 border-outline-variant flat no shadows">
+<div class="font-display-lg text-headline-md font-extrabold text-primary dark:text-primary tracking-widest uppercase">
+            SNAKE SUPERVISOR DOMGUARD
+        </div>
+<div class="flex gap-4">
+<button class="text-primary dark:text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors active:scale-95 duration-100 flex items-center justify-center h-touch-target w-touch-target rounded">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+</button>
+<button class="text-primary dark:text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors active:scale-95 duration-100 flex items-center justify-center h-touch-target w-touch-target rounded">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar (Hidden on sm) -->
+<nav class="hidden md:flex fixed left-0 top-0 h-full flex-col pt-16 z-40 bg-surface-container-low dark:bg-surface-container-low docked left-0 h-full w-64 border-r-2 border-outline-variant flat no shadows">
+<div class="px-container-padding mb-8">
+<div class="w-12 h-12 rounded-full bg-surface-variant mb-4 flex items-center justify-center border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-2xl">supervisor_account</span>
+</div>
+<h2 class="font-headline-md text-primary truncate">DOMGUARD UNIT-01</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">SYSTEM ACTIVE</p>
+</div>
+<ul class="flex flex-col gap-2 flex-grow">
+<li>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all active:opacity-80" href="#">
+<span class="material-symbols-outlined text-lg">terminal</span>
+                    DASHBOARD
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all active:opacity-80" href="#">
+<span class="material-symbols-outlined text-lg">memory</span>
+                    SYSTEM
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 bg-secondary-container text-on-secondary-container rounded-none border-l-4 border-primary px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all active:opacity-80" href="#">
+<span class="material-symbols-outlined text-lg">list_alt</span>
+                    CONTROLS
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all active:opacity-80" href="#">
+<span class="material-symbols-outlined text-lg">tune</span>
+                    CONFIG
+                </a>
+</li>
+</ul>
+<div class="px-4 pb-4">
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-label-caps text-label-caps font-bold rounded-sm border-2 border-transparent hover:border-inverse-surface hover:bg-primary transition-all active:scale-95 duration-100 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">power_settings_new</span>
+                REBOOT SYSTEM
+            </button>
+</div>
+<div class="border-t-2 border-outline-variant pt-4 pb-8 px-4 flex flex-col gap-2">
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-variant px-2 py-2 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+                HELP
+            </a>
+<a class="flex items-center gap-3 text-on-surface-variant hover:bg-surface-variant px-2 py-2 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-lg">logout</span>
+                LOGOUT
+            </a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-grow pt-[44px] md:pt-0 md:ml-64 flex flex-col items-center justify-center p-container-padding pb-24 md:pb-container-padding min-h-screen relative overflow-hidden">
+<!-- Decorative Background Elements -->
+<div class="absolute inset-0 z-0 pointer-events-none opacity-20" style="background-image: radial-gradient(#334155 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="relative z-10 w-full max-w-board-max-width bg-surface border border-outline-variant rounded-DEFAULT p-8 flex flex-col gap-8 shadow-[0_0_0_1px_rgba(51,65,85,1)]">
+<header class="flex items-center gap-4 border-b border-outline-variant pb-4">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">videogame_asset</span>
+<div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-tighter uppercase">CONTROLS &amp; DIRECTIVES</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">SUPERVISOR TRAINING MODULE</p>
+</div>
+</header>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Controls Section -->
+<div class="flex flex-col gap-6">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-2 uppercase">INPUT MAPPINGS</h2>
+<div class="bg-surface-container p-6 border border-outline-variant rounded-DEFAULT flex flex-col items-center gap-6">
+<div class="font-label-caps text-label-caps text-on-surface-variant mb-2">KEYBOARD PRIMARY</div>
+<!-- WASD / Arrows Mockup -->
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 bg-surface-variant border-b-4 border-outline-variant rounded-sm flex items-center justify-center font-status-number text-status-number text-on-surface">W / ↑</div>
+<div class="flex gap-2">
+<div class="w-12 h-12 bg-surface-variant border-b-4 border-outline-variant rounded-sm flex items-center justify-center font-status-number text-status-number text-on-surface">A / ←</div>
+<div class="w-12 h-12 bg-surface-variant border-b-4 border-outline-variant rounded-sm flex items-center justify-center font-status-number text-status-number text-on-surface">S / ↓</div>
+<div class="w-12 h-12 bg-surface-variant border-b-4 border-outline-variant rounded-sm flex items-center justify-center font-status-number text-status-number text-on-surface">D / →</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 border border-outline-variant rounded-DEFAULT flex flex-col items-center gap-4">
+<div class="font-label-caps text-label-caps text-on-surface-variant">TOUCH / MOBILE</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant">touch_app</span>
+<div class="font-body-base text-body-base text-on-surface text-center">
+                                Tap directional quadrants on the active game surface to navigate.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Directives Section -->
+<div class="flex flex-col gap-6">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-2 uppercase">OPERATIONAL DIRECTIVES</h2>
+<ul class="flex flex-col gap-4">
+<li class="bg-surface-container-low p-4 border border-outline-variant border-l-4 border-l-primary flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">restaurant</span>
+<div>
+<div class="font-status-number text-status-number text-primary mb-1">EAT FOOD TO GROW</div>
+<p class="font-body-base text-body-base text-on-surface-variant text-sm">Acquire glowing nutritional units to increase supervisor length and score.</p>
+</div>
+</li>
+<li class="bg-surface-container-low p-4 border border-outline-variant border-l-4 border-l-error flex items-start gap-4">
+<span class="material-symbols-outlined text-error mt-1">warning</span>
+<div>
+<div class="font-status-number text-status-number text-error mb-1">AVOID WALLS AND SELF</div>
+<p class="font-body-base text-body-base text-on-surface-variant text-sm">Collision with perimeter containment or supervisor's own structure results in catastrophic system failure.</p>
+</div>
+</li>
+<li class="bg-surface-container-low p-4 border border-outline-variant border-l-4 border-l-tertiary flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary mt-1">speed</span>
+<div>
+<div class="font-status-number text-status-number text-tertiary mb-1">SPEED INCREASES WITH LEVEL</div>
+<p class="font-body-base text-body-base text-on-surface-variant text-sm">As proficiency is demonstrated, operational velocity will escalate exponentially.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<footer class="mt-4 pt-4 border-t border-outline-variant flex justify-end">
+<button class="bg-surface-variant text-on-surface-variant hover:bg-surface-container-high hover:text-primary px-8 py-3 font-label-caps text-label-caps uppercase border border-outline-variant transition-colors active:scale-95 duration-100 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+                    ACKNOWLEDGE DIRECTIVES
+                </button>
+</footer>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-4 px-container-padding flex flex-col md:flex-row justify-between items-center bg-background border-t border-outline-variant docked full-width bottom-0 flat z-50 fixed md:relative bottom-0 hidden md:flex">
+<div class="text-primary font-bold font-label-caps text-label-caps uppercase">
+            © 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS
+        </div>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Service Status</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+</div>
+</footer>
+<!-- Mobile BottomNavBar (Visible only on small screens) -->
+<nav class="md:hidden fixed bottom-0 w-full bg-surface-container border-t border-outline-variant flex justify-around py-2 z-50">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary p-2 w-touch-target" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="font-label-caps text-[10px]">DASHBOARD</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary border-t-2 border-primary p-2 w-touch-target" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">list_alt</span>
+<span class="font-label-caps text-[10px]">CONTROLS</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant hover:text-primary p-2 w-touch-target" href="#">
+<span class="material-symbols-outlined">tune</span>
+<span class="font-label-caps text-[10px]">CONFIG</span>
+</a>
+</nav>
+</body></html>

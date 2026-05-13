@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNAKE SUPERVISOR DOMGUARD - Game Board</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdad5",
+                        "on-secondary-container": "#abb9d2",
+                        "surface-container-high": "#242c24",
+                        "surface-tint": "#4ae176",
+                        "surface-variant": "#2f372e",
+                        "background": "#0e150e",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#2a322a",
+                        "primary-container": "#22c55e",
+                        "on-primary": "#003915",
+                        "outline": "#869585",
+                        "on-surface-variant": "#bccbb9",
+                        "on-tertiary-fixed": "#410001",
+                        "secondary-fixed": "#d5e3fd",
+                        "surface-dim": "#0e150e",
+                        "surface-container-highest": "#2f372e",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "secondary-container": "#3c4a5e",
+                        "inverse-primary": "#006e2f",
+                        "on-primary-fixed": "#002109",
+                        "surface-bright": "#333b33",
+                        "on-tertiary": "#60130d",
+                        "inverse-surface": "#dce5d9",
+                        "on-surface": "#dce5d9",
+                        "surface-container-lowest": "#091009",
+                        "on-secondary": "#233144",
+                        "on-primary-container": "#004b1e",
+                        "primary": "#4be277",
+                        "primary-fixed-dim": "#4ae176",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-tertiary-container": "#76231b",
+                        "tertiary": "#ffb5ab",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#ff8b7c",
+                        "on-primary-fixed-variant": "#005321",
+                        "surface": "#0e150e",
+                        "secondary": "#b9c7e0",
+                        "surface-container": "#1a221a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#7f2a21",
+                        "outline-variant": "#3d4a3d",
+                        "primary-fixed": "#6bff8f",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-background": "#dce5d9",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161d16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding": "24px",
+                        "board-max-width": "800px",
+                        "touch-target": "44px",
+                        "unit": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "status-number": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-base": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "status-number": ["20px", { "lineHeight": "1.0", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-base": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-base min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface-container border-b-2 border-outline-variant flex justify-between items-center px-container-padding h-touch-target w-full fixed top-0 z-50">
+<div class="flex items-center gap-container-padding">
+<span class="font-display-lg text-headline-md font-extrabold text-primary tracking-widest">SNAKE SUPERVISOR DOMGUARD</span>
+<nav class="hidden md:flex gap-gutter">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors" href="#">GAME</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">MENU</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">CONTROLS</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">SETTINGS</a>
+</nav>
+</div>
+<div class="flex items-center gap-gutter">
+<button class="text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors p-2 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">monitoring</span>
+</button>
+<button class="text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors p-2 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar (Hidden on Mobile, Visible on Desktop) -->
+<aside class="hidden lg:flex flex-col bg-surface-container-low border-r-2 border-outline-variant fixed left-0 top-0 h-full w-64 pt-16 z-40">
+<div class="p-container-padding border-b-2 border-outline-variant">
+<h2 class="font-headline-md text-headline-md text-primary mb-1">DOMGUARD UNIT-01</h2>
+<p class="font-label-caps text-label-caps text-on-surface-variant">SYSTEM ACTIVE</p>
+</div>
+<nav class="flex-1 overflow-y-auto py-gutter">
+<a class="flex items-center gap-4 bg-secondary-container text-on-secondary-container rounded-none border-l-4 border-primary px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">terminal</span>
+                DASHBOARD
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">memory</span>
+                SYSTEM
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">list_alt</span>
+                LOGS
+            </a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-3 font-label-caps text-label-caps hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined">tune</span>
+                CONFIG
+            </a>
+</nav>
+<div class="p-container-padding border-t-2 border-outline-variant">
+<button class="w-full bg-primary-container text-on-primary-container font-label-caps text-label-caps h-touch-target flex items-center justify-center rounded hover:bg-primary transition-colors">
+                REBOOT SYSTEM
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 pt-[60px] lg:pl-64 pb-[60px] lg:pb-0 flex flex-col items-center justify-center p-container-padding gap-container-padding bg-background">
+<!-- HUD Cluster above Game Board -->
+<div class="w-full max-w-board-max-width flex flex-wrap gap-gutter justify-between items-end">
+<!-- Score Module -->
+<div class="flex gap-gutter">
+<div class="bg-surface-container border border-outline-variant p-3 flex flex-col items-start min-w-[120px]">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">SCORE</span>
+<span class="font-status-number text-status-number text-primary">1,250</span>
+</div>
+<div class="bg-surface-container border border-outline-variant p-3 flex flex-col items-start min-w-[120px]">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">HIGH SCORE</span>
+<span class="font-status-number text-status-number text-secondary">5,000</span>
+</div>
+<div class="bg-surface-container border border-outline-variant p-3 flex flex-col items-start min-w-[100px]">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-1">LEVEL</span>
+<span class="font-status-number text-status-number text-tertiary">4</span>
+</div>
+</div>
+<!-- System Status Panel -->
+<div class="bg-surface-container border border-primary p-3 flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">SYSTEM: ACTIVE</span>
+</div>
+</div>
+<!-- Central Game Board Container -->
+<div class="w-full max-w-board-max-width aspect-square bg-surface border-2 border-outline-variant relative overflow-hidden flex items-center justify-center p-unit">
+<!-- Simulated 20x20 Grid -->
+<div class="w-full h-full grid grid-cols-20 grid-rows-20 gap-px bg-[#1E293B]">
+<!-- Grid Cells (Generating a few to represent the grid, typically this would be JS driven) -->
+<!-- The CSS for grid-cols-20 isn't standard tailwind, we'd normally use custom config or arbitrary values, 
+                     but we'll use inline styles for the exact 20x20 grid requirement to comply with generic tailwind constraints if custom isn't defined,
+                     however, since we must stick to config, we will simulate the grid visual -->
+</div>
+<!-- Simulated Grid Background via CSS background-image for visual accuracy without 400 DOM elements -->
+<div class="absolute inset-0 border border-outline-variant m-unit" style="background-image: linear-gradient(to right, #1E293B 1px, transparent 1px), linear-gradient(to bottom, #1E293B 1px, transparent 1px); background-size: 5% 5%;">
+<!-- Simulated Snake -->
+<div class="absolute bg-primary" style="left: 45%; top: 50%; width: 5%; height: 5%;"></div> <!-- Tail -->
+<div class="absolute bg-primary" style="left: 50%; top: 50%; width: 5%; height: 5%;"></div> <!-- Body -->
+<div class="absolute bg-primary" style="left: 55%; top: 50%; width: 5%; height: 5%;"></div> <!-- Body -->
+<div class="absolute bg-primary border-r-2 border-background" style="left: 60%; top: 50%; width: 5%; height: 5%;"></div> <!-- Head -->
+<!-- Simulated Food -->
+<div class="absolute bg-[#F59E0B] animate-pulse" style="left: 75%; top: 30%; width: 4%; height: 4%; transform: translate(12.5%, 12.5%);"></div>
+</div>
+<!-- Focus Ring Overlay (Simulating active focus on the game board) -->
+<div class="absolute inset-0 border-2 border-[#F8FAFC] opacity-20 pointer-events-none m-unit"></div>
+</div>
+<!-- Controls Cluster below Game Board -->
+<div class="w-full max-w-board-max-width flex justify-center gap-gutter">
+<button class="bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-variant hover:text-primary transition-colors h-touch-target px-container-padding font-label-caps text-label-caps flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">play_arrow</span>
+                START
+            </button>
+<button class="bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-variant hover:text-primary transition-colors h-touch-target px-container-padding font-label-caps text-label-caps flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">pause</span>
+                PAUSE
+            </button>
+<button class="bg-surface-container border border-outline-variant text-on-surface hover:bg-surface-variant hover:text-primary transition-colors h-touch-target px-container-padding font-label-caps text-label-caps flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">replay</span>
+                RESTART
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-4 px-container-padding flex justify-between items-center bg-background border-t border-outline-variant lg:pl-64 mt-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant">© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS</span>
+<div class="flex gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Service Status</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNAKE SUPERVISOR DOMGUARD - Paused</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&amp;family=Hanken+Grotesk:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#ffdad5",
+                      "on-secondary-container": "#abb9d2",
+                      "surface-container-high": "#242c24",
+                      "surface-tint": "#4ae176",
+                      "surface-variant": "#2f372e",
+                      "background": "#0e150e",
+                      "on-error-container": "#ffdad6",
+                      "inverse-on-surface": "#2a322a",
+                      "primary-container": "#22c55e",
+                      "on-primary": "#003915",
+                      "outline": "#869585",
+                      "on-surface-variant": "#bccbb9",
+                      "on-tertiary-fixed": "#410001",
+                      "secondary-fixed": "#d5e3fd",
+                      "surface-dim": "#0e150e",
+                      "surface-container-highest": "#2f372e",
+                      "on-secondary-fixed": "#0d1c2f",
+                      "secondary-container": "#3c4a5e",
+                      "inverse-primary": "#006e2f",
+                      "on-primary-fixed": "#002109",
+                      "surface-bright": "#333b33",
+                      "on-tertiary": "#60130d",
+                      "inverse-surface": "#dce5d9",
+                      "on-surface": "#dce5d9",
+                      "surface-container-lowest": "#091009",
+                      "on-secondary": "#233144",
+                      "on-primary-container": "#004b1e",
+                      "primary": "#4be277",
+                      "primary-fixed-dim": "#4ae176",
+                      "on-secondary-fixed-variant": "#3a485c",
+                      "on-tertiary-container": "#76231b",
+                      "tertiary": "#ffb5ab",
+                      "error": "#ffb4ab",
+                      "tertiary-container": "#ff8b7c",
+                      "on-primary-fixed-variant": "#005321",
+                      "surface": "#0e150e",
+                      "secondary": "#b9c7e0",
+                      "surface-container": "#1a221a",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#7f2a21",
+                      "outline-variant": "#3d4a3d",
+                      "primary-fixed": "#6bff8f",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "on-background": "#dce5d9",
+                      "secondary-fixed-dim": "#b9c7e0",
+                      "on-error": "#690005",
+                      "surface-container-low": "#161d16"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding": "24px",
+                      "board-max-width": "800px",
+                      "touch-target": "44px",
+                      "unit": "4px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "status-number": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-base": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "status-number": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-base overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface-container dark:bg-surface-container flex justify-between items-center px-container-padding h-touch-target w-full fixed top-0 z-50 border-b-2 border-outline-variant flat no shadows">
+<div class="font-display-lg text-headline-md font-extrabold text-primary dark:text-primary tracking-widest uppercase">
+            SNAKE SUPERVISOR DOMGUARD
+        </div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">GAME</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">MENU</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">CONTROLS</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">SETTINGS</a>
+</nav>
+<div class="flex items-center gap-4">
+<button aria-label="monitoring" class="text-primary dark:text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors p-1">
+<span class="material-symbols-outlined">monitoring</span>
+</button>
+<button aria-label="settings" class="text-primary dark:text-primary hover:text-primary-fixed hover:bg-surface-variant transition-colors p-1">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Game Area (Simulated Background) -->
+<main class="flex-grow pt-touch-target flex items-center justify-center relative p-container-padding">
+<!-- Background Game Board (Blurred/Dimmed) -->
+<div class="w-full max-w-board-max-width aspect-square md:aspect-video bg-[#111827] border border-[#334155] relative overflow-hidden flex items-center justify-center opacity-40 blur-sm pointer-events-none">
+<!-- Simulated Grid lines -->
+<div class="absolute inset-0" style="background-image: linear-gradient(#1E293B 0.5px, transparent 0.5px), linear-gradient(90deg, #1E293B 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+<!-- Simulated Snake -->
+<div class="absolute w-[20px] h-[20px] bg-primary top-[40%] left-[40%]"></div>
+<div class="absolute w-[20px] h-[20px] bg-primary top-[40%] left-[45%]"></div>
+<div class="absolute w-[20px] h-[20px] bg-primary top-[40%] left-[50%]"></div>
+<!-- Simulated Food -->
+<div class="absolute w-[16px] h-[16px] bg-[#F59E0B] top-[60%] left-[70%]"></div>
+</div>
+<!-- Pause Overlay Modal -->
+<div class="absolute inset-0 z-40 flex items-center justify-center bg-[#0F172A]/60 backdrop-blur-sm px-container-padding">
+<div class="bg-[#111827] border-2 border-outline-variant w-full max-w-md p-8 flex flex-col items-center gap-8 shadow-2xl relative">
+<!-- Modal Header -->
+<div class="text-center w-full border-b border-outline-variant pb-4">
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tighter uppercase mb-2">GAME PAUSED</h1>
+<div class="flex justify-center gap-6 text-on-surface-variant font-label-caps text-label-caps">
+<span>SCORE: <span class="font-status-number text-status-number text-primary ml-1">12,450</span></span>
+<span>LENGTH: <span class="font-status-number text-status-number text-secondary ml-1">42</span></span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col w-full gap-4">
+<!-- Primary Action: Resume -->
+<button class="h-touch-target w-full bg-[#F8FAFC] text-[#0F172A] font-headline-md text-headline-md tracking-tighter uppercase border-2 border-transparent hover:border-primary hover:bg-[#0F172A] hover:text-[#F8FAFC] focus:border-primary focus:bg-[#0F172A] focus:text-[#F8FAFC] focus:outline-none transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-[28px]">play_arrow</span>
+                        RESUME
+                    </button>
+<!-- Secondary Action: Restart -->
+<button class="h-touch-target w-full bg-transparent text-on-surface font-headline-md text-headline-md tracking-tighter uppercase border-2 border-outline-variant hover:border-[#F8FAFC] hover:text-[#F8FAFC] focus:border-[#F8FAFC] focus:text-[#F8FAFC] focus:outline-none transition-all flex items-center justify-center gap-2 group">
+<span class="material-symbols-outlined text-[28px]">replay</span>
+                        RESTART
+                    </button>
+<!-- Tertiary Action: Exit -->
+<button class="h-touch-target w-full bg-transparent text-error font-headline-md text-headline-md tracking-tighter uppercase border-2 border-transparent hover:border-error hover:bg-error/10 focus:border-error focus:bg-error/10 focus:outline-none transition-all flex items-center justify-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[28px]">logout</span>
+                        EXIT TO MENU
+                    </button>
+</div>
+<!-- System Status indicator -->
+<div class="absolute top-4 right-4 flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">STANDBY</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-4 px-container-padding flex flex-col md:flex-row justify-between items-center bg-background border-t border-outline-variant flat z-50 mt-auto">
+<div class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps mb-4 md:mb-0">
+            © 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS
+        </div>
+<div class="flex gap-gutter">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Service Status</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Documentation</a>
+</div>
+</footer>
+</body></html>

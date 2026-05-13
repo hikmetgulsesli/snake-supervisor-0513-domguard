@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SNAKE SUPERVISOR DOMGUARD - Main Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#ffdad5",
+                      "on-secondary-container": "#abb9d2",
+                      "surface-container-high": "#242c24",
+                      "surface-tint": "#4ae176",
+                      "surface-variant": "#2f372e",
+                      "background": "#0e150e",
+                      "on-error-container": "#ffdad6",
+                      "inverse-on-surface": "#2a322a",
+                      "primary-container": "#22c55e",
+                      "on-primary": "#003915",
+                      "outline": "#869585",
+                      "on-surface-variant": "#bccbb9",
+                      "on-tertiary-fixed": "#410001",
+                      "secondary-fixed": "#d5e3fd",
+                      "surface-dim": "#0e150e",
+                      "surface-container-highest": "#2f372e",
+                      "on-secondary-fixed": "#0d1c2f",
+                      "secondary-container": "#3c4a5e",
+                      "inverse-primary": "#006e2f",
+                      "on-primary-fixed": "#002109",
+                      "surface-bright": "#333b33",
+                      "on-tertiary": "#60130d",
+                      "inverse-surface": "#dce5d9",
+                      "on-surface": "#dce5d9",
+                      "surface-container-lowest": "#091009",
+                      "on-secondary": "#233144",
+                      "on-primary-container": "#004b1e",
+                      "primary": "#4be277",
+                      "primary-fixed-dim": "#4ae176",
+                      "on-secondary-fixed-variant": "#3a485c",
+                      "on-tertiary-container": "#76231b",
+                      "tertiary": "#ffb5ab",
+                      "error": "#ffb4ab",
+                      "tertiary-container": "#ff8b7c",
+                      "on-primary-fixed-variant": "#005321",
+                      "surface": "#0e150e",
+                      "secondary": "#b9c7e0",
+                      "surface-container": "#1a221a",
+                      "error-container": "#93000a",
+                      "on-tertiary-fixed-variant": "#7f2a21",
+                      "outline-variant": "#3d4a3d",
+                      "primary-fixed": "#6bff8f",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "on-background": "#dce5d9",
+                      "secondary-fixed-dim": "#b9c7e0",
+                      "on-error": "#690005",
+                      "surface-container-low": "#161d16"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-padding": "24px",
+                      "board-max-width": "800px",
+                      "touch-target": "44px",
+                      "unit": "4px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "status-number": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-base": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "status-number": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col relative overflow-hidden">
+<div class="absolute inset-0 z-0 pointer-events-none opacity-20" style="background-image: radial-gradient(circle at 50% 50%, #334155 1px, transparent 1px); background-size: 24px 24px;"></div>
+<nav class="bg-surface-container flex justify-between items-center px-container-padding h-touch-target w-full fixed top-0 z-50 border-b-2 border-outline-variant relative z-10">
+<div class="font-display-lg text-headline-md font-extrabold text-primary tracking-widest uppercase">
+            SNAKE SUPERVISOR DOMGUARD
+        </div>
+<div class="hidden md:flex gap-6">
+<a class="text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">GAME</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">MENU</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">CONTROLS</a>
+<a class="text-on-surface-variant font-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors px-2 py-1" href="#">SETTINGS</a>
+</div>
+<div class="flex gap-4 text-primary">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">monitoring</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">settings</span>
+</div>
+</nav>
+<main class="flex-grow flex items-center justify-center relative z-10 p-container-padding">
+<div class="absolute w-[800px] h-[600px] border border-outline-variant/30 flex items-center justify-center opacity-10 pointer-events-none z-0">
+<div class="w-[600px] h-[400px] border border-outline-variant/50"></div>
+</div>
+<div class="bg-surface-container/90 backdrop-blur-sm border-2 border-outline-variant p-8 w-full max-w-md flex flex-col items-center gap-6 z-20">
+<div class="text-center mb-4">
+<h1 class="font-display-lg text-display-lg text-primary tracking-tighter mb-2">DOMGUARD</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant">SYSTEM UNIT-01 - SUPERVISOR MODE</p>
+</div>
+<div class="flex flex-col w-full gap-4">
+<button class="w-full min-h-[44px] bg-primary text-on-primary font-headline-md text-headline-md border-2 border-transparent hover:border-primary-fixed hover:bg-surface-container hover:text-primary-fixed transition-all px-4 py-3 flex justify-between items-center group">
+<span>START NEW GAME</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-full min-h-[44px] bg-surface text-on-surface font-headline-md text-headline-md border-2 border-outline-variant hover:border-primary hover:text-primary transition-all px-4 py-3 flex justify-between items-center group">
+<span>RESUME</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button class="w-full min-h-[44px] bg-surface text-on-surface font-headline-md text-headline-md border-2 border-outline-variant hover:border-primary hover:text-primary transition-all px-4 py-3 flex justify-between items-center group">
+<span>RESTART</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">refresh</span>
+</button>
+<button class="w-full min-h-[44px] bg-surface text-on-surface font-headline-md text-headline-md border-2 border-outline-variant hover:border-primary hover:text-primary transition-all px-4 py-3 flex justify-between items-center group">
+<span>SETTINGS</span>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" style="font-variation-settings: 'FILL' 1;">tune</span>
+</button>
+</div>
+<div class="mt-8 flex justify-between w-full border-t border-outline-variant pt-4">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">LAST SCORE</span>
+<span class="font-status-number text-status-number text-on-surface">14,250</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps text-on-surface-variant">SYSTEM STATUS</span>
+<span class="font-status-number text-status-number text-primary">ONLINE</span>
+</div>
+</div>
+</div>
+</main>
+<footer class="w-full py-4 px-container-padding flex justify-between items-center bg-background border-t border-outline-variant relative z-10">
+<div class="text-primary font-bold font-label-caps text-label-caps">
+            © 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS
+        </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Service Status</a>
+<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Documentation</a>
+</div>
+</footer>
+</body></html>

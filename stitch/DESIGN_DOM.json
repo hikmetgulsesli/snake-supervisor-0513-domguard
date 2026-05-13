@@ -1,0 +1,3071 @@
+{
+  "generatedAt": "2026-05-13T05:24:45.916Z",
+  "screenCount": 6,
+  "screens": {
+    "1767fa80227e45678da125a75bfdb40c": {
+      "screenId": "1767fa80227e45678da125a75bfdb40c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container",
+            "border-b-2",
+            "border-outline-variant",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "h-touch-target",
+            "w-full",
+            "fixed"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "aside",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "lg:flex",
+            "flex-col",
+            "bg-surface-container-low",
+            "border-r-2",
+            "border-outline-variant",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "pt-[60px]",
+            "lg:pl-64",
+            "pb-[60px]",
+            "lg:pb-0",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "p-container-padding"
+          ],
+          "childCount": 17
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "w-full",
+            "py-4",
+            "px-container-padding",
+            "flex",
+            "justify-between",
+            "items-center",
+            "bg-background",
+            "border-t",
+            "border-outline-variant",
+            "lg:pl-64"
+          ],
+          "childCount": 1
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "classes": [
+            "text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "p-2",
+            "rounded",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#",
+          "expectedRoute": "#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "p-2",
+            "rounded",
+            "flex",
+            "items-center",
+            "justify-center"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "REBOOT SYSTEM",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "font-label-caps",
+            "text-label-caps",
+            "h-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded",
+            "hover:bg-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "START",
+          "classes": [
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "h-touch-target",
+            "px-container-padding",
+            "font-label-caps",
+            "text-label-caps",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "pause",
+          "classes": [
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "h-touch-target",
+            "px-container-padding",
+            "font-label-caps",
+            "text-label-caps",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "classes": [
+            "bg-surface-container",
+            "border",
+            "border-outline-variant",
+            "text-on-surface",
+            "hover:bg-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "h-touch-target",
+            "px-container-padding",
+            "font-label-caps",
+            "text-label-caps",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "replay",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "border-b-2",
+            "border-primary",
+            "pb-1",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "terminal",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "memory",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "LOGS",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "list_alt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "tune",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "monitoring",
+        "settings",
+        "terminal",
+        "memory",
+        "list_alt",
+        "tune",
+        "play_arrow",
+        "pause",
+        "replay"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 20,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "icon": "terminal",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "icon": "memory",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "LOGS",
+          "icon": "list_alt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "icon": "tune",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "action": "navigate",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "REBOOT SYSTEM",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "START",
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "pause",
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "icon": "replay",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "icon": "terminal",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "icon": "memory",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "LOGS",
+          "icon": "list_alt",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "icon": "tune",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Game Board"
+    },
+    "2455adfd7d8147dcbd3db93ec6c44364": {
+      "screenId": "2455adfd7d8147dcbd3db93ec6c44364",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "h-touch-target",
+            "w-full",
+            "fixed",
+            "top-0"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "pt-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "relative",
+            "p-container-padding"
+          ],
+          "childCount": 13
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-col",
+          "classes": [
+            "w-full",
+            "py-4",
+            "px-container-padding",
+            "flex",
+            "flex-col",
+            "md:flex-row",
+            "justify-between",
+            "items-center",
+            "bg-background",
+            "border-t"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "classes": [
+            "text-primary",
+            "dark:text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "p-1"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#",
+          "expectedRoute": "#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-primary",
+            "dark:text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "p-1"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "RESUME",
+          "classes": [
+            "h-touch-target",
+            "w-full",
+            "bg-[#F8FAFC]",
+            "text-[#0F172A]",
+            "font-headline-md",
+            "text-headline-md",
+            "tracking-tighter",
+            "uppercase",
+            "border-2",
+            "border-transparent",
+            "hover:border-primary",
+            "hover:bg-[#0F172A]",
+            "hover:text-[#F8FAFC]",
+            "focus:border-primary",
+            "focus:bg-[#0F172A]",
+            "focus:text-[#F8FAFC]",
+            "focus:outline-none",
+            "transition-all",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "group"
+          ],
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "classes": [
+            "h-touch-target",
+            "w-full",
+            "bg-transparent",
+            "text-on-surface",
+            "font-headline-md",
+            "text-headline-md",
+            "tracking-tighter",
+            "uppercase",
+            "border-2",
+            "border-outline-variant",
+            "hover:border-[#F8FAFC]",
+            "hover:text-[#F8FAFC]",
+            "focus:border-[#F8FAFC]",
+            "focus:text-[#F8FAFC]",
+            "focus:outline-none",
+            "transition-all",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "group"
+          ],
+          "icon": "replay",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "EXIT TO MENU",
+          "classes": [
+            "h-touch-target",
+            "w-full",
+            "bg-transparent",
+            "text-error",
+            "font-headline-md",
+            "text-headline-md",
+            "tracking-tighter",
+            "uppercase",
+            "border-2",
+            "border-transparent",
+            "hover:border-error",
+            "hover:bg-error/10",
+            "focus:border-error",
+            "focus:bg-error/10",
+            "focus:outline-none",
+            "transition-all",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "mt-2"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/logout",
+          "expectedRoute": "/logout",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "monitoring",
+        "settings",
+        "play_arrow",
+        "replay",
+        "logout"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "JetBrains Mono",
+        "Hanken Grotesk",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "action": "navigate",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "RESUME",
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "icon": "replay",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "EXIT TO MENU",
+          "icon": "logout",
+          "action": "navigate",
+          "route": "/logout",
+          "expectedBehavior": "navigate:/logout"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Pause Overlay"
+    },
+    "30cf1e5903df40a6b95412d0c45b78c0": {
+      "screenId": "30cf1e5903df40a6b95412d0c45b78c0",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "bg-surface-container",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "h-touch-target",
+            "w-full",
+            "fixed",
+            "top-0",
+            "z-50"
+          ],
+          "childCount": 3
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "items-center",
+            "justify-center",
+            "relative",
+            "z-10",
+            "p-container-padding"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "w-full",
+            "py-4",
+            "px-container-padding",
+            "flex",
+            "justify-between",
+            "items-center",
+            "bg-background",
+            "border-t",
+            "border-outline-variant",
+            "relative"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "START NEW GAME",
+          "classes": [
+            "w-full",
+            "min-h-[44px]",
+            "bg-primary",
+            "text-on-primary",
+            "font-headline-md",
+            "text-headline-md",
+            "border-2",
+            "border-transparent",
+            "hover:border-primary-fixed",
+            "hover:bg-surface-container",
+            "hover:text-primary-fixed",
+            "transition-all",
+            "px-4",
+            "py-3",
+            "flex",
+            "justify-between",
+            "items-center",
+            "group"
+          ],
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESUME",
+          "classes": [
+            "w-full",
+            "min-h-[44px]",
+            "bg-surface",
+            "text-on-surface",
+            "font-headline-md",
+            "text-headline-md",
+            "border-2",
+            "border-outline-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-all",
+            "px-4",
+            "py-3",
+            "flex",
+            "justify-between",
+            "items-center",
+            "group"
+          ],
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "classes": [
+            "w-full",
+            "min-h-[44px]",
+            "bg-surface",
+            "text-on-surface",
+            "font-headline-md",
+            "text-headline-md",
+            "border-2",
+            "border-outline-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-all",
+            "px-4",
+            "py-3",
+            "flex",
+            "justify-between",
+            "items-center",
+            "group"
+          ],
+          "icon": "refresh",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "SETTINGS",
+          "classes": [
+            "w-full",
+            "min-h-[44px]",
+            "bg-surface",
+            "text-on-surface",
+            "font-headline-md",
+            "text-headline-md",
+            "border-2",
+            "border-outline-variant",
+            "hover:border-primary",
+            "hover:text-primary",
+            "transition-all",
+            "px-4",
+            "py-3",
+            "flex",
+            "justify-between",
+            "items-center",
+            "group"
+          ],
+          "icon": "tune",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "SNAKE SUPERVISOR DOMGUARD",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "classes": [],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#",
+          "expectedRoute": "#"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "border-b-2",
+            "border-primary",
+            "pb-1",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "px-2",
+            "py-1"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "monitoring",
+        "settings",
+        "play_arrow",
+        "pause",
+        "refresh",
+        "tune"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "6"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "START NEW GAME",
+          "icon": "play_arrow",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESUME",
+          "icon": "pause",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESTART",
+          "icon": "refresh",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "SETTINGS",
+          "icon": "tune",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "SNAKE SUPERVISOR DOMGUARD",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "action": "navigate",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "SNAKE SUPERVISOR DOMGUARD",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Main Menu"
+    },
+    "4c3c50e2cfaf4dbd9806d4baa516309c": {
+      "screenId": "4c3c50e2cfaf4dbd9806d4baa516309c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-grow",
+            "flex",
+            "items-center",
+            "justify-center",
+            "relative",
+            "w-full",
+            "h-full",
+            "p-container-padding"
+          ],
+          "childCount": 15
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "TRY AGAIN",
+          "classes": [
+            "flex-1",
+            "h-touch-target",
+            "bg-on-surface",
+            "text-surface",
+            "font-label-caps",
+            "text-label-caps",
+            "tracking-widest",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "transition-colors",
+            "border",
+            "border-on-surface",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-primary",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background",
+            "group"
+          ],
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "MAIN MENU",
+          "classes": [
+            "flex-1",
+            "h-touch-target",
+            "bg-transparent",
+            "text-on-surface",
+            "border",
+            "border-outline-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "tracking-widest",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-on-surface",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background"
+          ],
+          "icon": "grid_view",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "warning",
+        "military_tech",
+        "refresh",
+        "grid_view"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "Hanken Grotesk",
+        "JetBrains Mono",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "TRY AGAIN",
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "MAIN MENU",
+          "icon": "grid_view",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [],
+      "title": "Game Over"
+    },
+    "9da3e78b5ddd4807b8b931fcfab9289c": {
+      "screenId": "9da3e78b5ddd4807b8b931fcfab9289c",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "h-[64px]",
+            "w-full",
+            "fixed",
+            "top-0",
+            "z-50",
+            "bg-surface-container"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "pt-[88px]",
+            "pb-container-padding",
+            "px-container-padding",
+            "flex",
+            "justify-center",
+            "w-full"
+          ],
+          "childCount": 24
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "w-full",
+            "py-4",
+            "px-container-padding",
+            "flex",
+            "justify-between",
+            "items-center",
+            "bg-background",
+            "dark:bg-background",
+            "border-t",
+            "border-outline-variant"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "rounded-none",
+            "text-primary",
+            "dark:text-primary",
+            "font-headline-md",
+            "text-headline-md",
+            "tracking-tighter",
+            "active:scale-95",
+            "duration-100"
+          ],
+          "icon": "monitoring",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#",
+          "expectedRoute": "#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "h-touch-target",
+            "w-touch-target",
+            "flex",
+            "items-center",
+            "justify-center",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "rounded-none",
+            "text-primary",
+            "dark:text-primary",
+            "font-headline-md",
+            "text-headline-md",
+            "tracking-tighter",
+            "active:scale-95",
+            "duration-100"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "RESET HIGH SCORE CONFIRM PURGE",
+          "classes": [
+            "h-touch-target",
+            "px-6",
+            "border-2",
+            "border-error",
+            "bg-transparent",
+            "text-error",
+            "font-label-caps",
+            "text-label-caps",
+            "rounded-none",
+            "hover:bg-error",
+            "hover:text-on-error",
+            "transition-all",
+            "flex",
+            "items-center",
+            "gap-2",
+            "flex-shrink-0",
+            "group",
+            "focus:outline-none",
+            "focus:ring-2",
+            "focus:ring-error",
+            "focus:ring-offset-2",
+            "focus:ring-offset-background",
+            "active:scale-95",
+            "duration-100",
+            "relative",
+            "overflow-hidden"
+          ],
+          "icon": "delete_forever",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "sr-only",
+            "peer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "game_speed",
+          "placeholder": "",
+          "name": "game_speed",
+          "classes": [
+            "sr-only",
+            "peer"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "h-full",
+            "px-2",
+            "rounded-none"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "h-full",
+            "px-2",
+            "rounded-none"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "h-full",
+            "px-2",
+            "rounded-none"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "href": "#",
+          "classes": [
+            "text-primary",
+            "dark:text-primary",
+            "border-b-2",
+            "border-primary",
+            "pb-1",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "flex",
+            "items-center",
+            "h-full",
+            "px-2",
+            "rounded-none",
+            "mt-[2px]"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "text-on-surface-variant",
+            "dark:text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "monitoring",
+        "settings",
+        "volume_up",
+        "speed",
+        "warning",
+        "delete_forever",
+        "priority_high"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "8"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "action": "navigate",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "RESET HIGH SCORE CONFIRM PURGE",
+          "icon": "delete_forever",
+          "action": "destructive",
+          "expectedBehavior": "perform destructive action with visible feedback or confirmation"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "game_speed",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "link",
+          "label": "GAME",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "MENU",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "SETTINGS",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Game Options"
+    },
+    "c18b393f7fad442b928a8ff2b0beba6b": {
+      "screenId": "c18b393f7fad442b928a8ff2b0beba6b",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "md:hidden",
+            "bg-surface-container",
+            "dark:bg-surface-container",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-container-padding",
+            "h-touch-target",
+            "w-full",
+            "fixed"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "flex-col",
+            "pt-16",
+            "z-40",
+            "bg-surface-container-low"
+          ],
+          "childCount": 8
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-grow",
+            "pt-[44px]",
+            "md:pt-0",
+            "md:ml-64",
+            "flex",
+            "flex-col",
+            "items-center",
+            "justify-center",
+            "p-container-padding",
+            "pb-24"
+          ],
+          "childCount": 27
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-col",
+          "classes": [
+            "w-full",
+            "py-4",
+            "px-container-padding",
+            "flex",
+            "flex-col",
+            "md:flex-row",
+            "justify-between",
+            "items-center",
+            "bg-background",
+            "border-t"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-row",
+          "classes": [
+            "md:hidden",
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "bg-surface-container",
+            "border-t",
+            "border-outline-variant",
+            "flex",
+            "justify-around",
+            "py-2"
+          ],
+          "childCount": 0
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "classes": [
+            "text-primary",
+            "dark:text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "active:scale-95",
+            "duration-100",
+            "flex",
+            "items-center",
+            "justify-center",
+            "h-touch-target",
+            "w-touch-target",
+            "rounded"
+          ],
+          "icon": "monitoring",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "classes": [
+            "text-primary",
+            "dark:text-primary",
+            "hover:text-primary-fixed",
+            "hover:bg-surface-variant",
+            "transition-colors",
+            "active:scale-95",
+            "duration-100",
+            "flex",
+            "items-center",
+            "justify-center",
+            "h-touch-target",
+            "w-touch-target",
+            "rounded"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:/settings",
+          "expectedRoute": "/settings",
+          "routeInferred": true
+        },
+        {
+          "kind": "button",
+          "label": "REBOOT SYSTEM",
+          "classes": [
+            "w-full",
+            "bg-primary-container",
+            "text-on-primary-container",
+            "py-3",
+            "font-label-caps",
+            "text-label-caps",
+            "font-bold",
+            "rounded-sm",
+            "border-2",
+            "border-transparent",
+            "hover:border-inverse-surface",
+            "hover:bg-primary",
+            "transition-all",
+            "active:scale-95",
+            "duration-100",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "power_settings_new",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "ACKNOWLEDGE DIRECTIVES",
+          "classes": [
+            "bg-surface-variant",
+            "text-on-surface-variant",
+            "hover:bg-surface-container-high",
+            "hover:text-primary",
+            "px-8",
+            "py-3",
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase",
+            "border",
+            "border-outline-variant",
+            "transition-colors",
+            "active:scale-95",
+            "duration-100",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "check_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "supervisor_account",
+          "classes": [],
+          "icon": "supervisor_account",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "terminal",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "memory",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "list_alt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "tune",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "help",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined",
+            "text-lg"
+          ],
+          "icon": "logout",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "monitoring",
+        "settings",
+        "supervisor_account",
+        "terminal",
+        "memory",
+        "list_alt",
+        "tune",
+        "power_settings_new",
+        "help",
+        "logout",
+        "videogame_asset",
+        "touch_app",
+        "restaurant",
+        "warning",
+        "speed",
+        "check_circle"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "tertiary-fixed": "#ffdad5",
+        "on-secondary-container": "#abb9d2",
+        "surface-container-high": "#242c24",
+        "surface-tint": "#4ae176",
+        "surface-variant": "#2f372e",
+        "background": "#0e150e",
+        "on-error-container": "#ffdad6",
+        "inverse-on-surface": "#2a322a",
+        "primary-container": "#22c55e",
+        "on-primary": "#003915",
+        "outline": "#869585",
+        "on-surface-variant": "#bccbb9",
+        "on-tertiary-fixed": "#410001",
+        "secondary-fixed": "#d5e3fd",
+        "surface-dim": "#0e150e",
+        "surface-container-highest": "#2f372e",
+        "on-secondary-fixed": "#0d1c2f",
+        "secondary-container": "#3c4a5e",
+        "inverse-primary": "#006e2f",
+        "on-primary-fixed": "#002109",
+        "surface-bright": "#333b33",
+        "on-tertiary": "#60130d",
+        "inverse-surface": "#dce5d9",
+        "on-surface": "#dce5d9",
+        "surface-container-lowest": "#091009",
+        "on-secondary": "#233144",
+        "on-primary-container": "#004b1e",
+        "primary": "#4be277",
+        "primary-fixed-dim": "#4ae176",
+        "on-secondary-fixed-variant": "#3a485c",
+        "on-tertiary-container": "#76231b",
+        "tertiary": "#ffb5ab",
+        "error": "#ffb4ab",
+        "tertiary-container": "#ff8b7c",
+        "on-primary-fixed-variant": "#005321",
+        "surface": "#0e150e",
+        "secondary": "#b9c7e0",
+        "surface-container": "#1a221a",
+        "error-container": "#93000a",
+        "on-tertiary-fixed-variant": "#7f2a21",
+        "outline-variant": "#3d4a3d",
+        "primary-fixed": "#6bff8f",
+        "tertiary-fixed-dim": "#ffb4a9",
+        "on-background": "#dce5d9",
+        "secondary-fixed-dim": "#b9c7e0",
+        "on-error": "#690005",
+        "surface-container-low": "#161d16"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Hanken Grotesk",
+        "JetBrains Mono"
+      ],
+      "layoutHints": {
+        "gridCols": 1,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "icon": "terminal",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "icon": "memory",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": "list_alt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "icon": "tune",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "monitoring",
+          "icon": "monitoring",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "settings",
+          "icon": "settings",
+          "action": "navigate",
+          "route": "/settings",
+          "expectedBehavior": "navigate:/settings"
+        },
+        {
+          "kind": "button",
+          "label": "REBOOT SYSTEM",
+          "icon": "power_settings_new",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "ACKNOWLEDGE DIRECTIVES",
+          "icon": "check_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "supervisor_account",
+          "icon": "supervisor_account",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "supervisor_account",
+          "icon": "supervisor_account",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "icon": "terminal",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM",
+          "icon": "memory",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": "list_alt",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "icon": "tune",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "REBOOT SYSTEM",
+          "icon": "power_settings_new",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "help",
+          "icon": "help",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "logout",
+          "icon": "logout",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "DASHBOARD",
+          "icon": "terminal",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONTROLS",
+          "icon": "list_alt",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "CONFIG",
+          "icon": "tune",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS",
+          "icon": null,
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Privacy Policy",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Service Status",
+          "icon": null,
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Documentation",
+          "icon": null,
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Controls Help"
+    }
+  }
+}

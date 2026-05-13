@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Options - Snake Supervisor Domguard</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffdad5",
+                        "on-secondary-container": "#abb9d2",
+                        "surface-container-high": "#242c24",
+                        "surface-tint": "#4ae176",
+                        "surface-variant": "#2f372e",
+                        "background": "#0e150e",
+                        "on-error-container": "#ffdad6",
+                        "inverse-on-surface": "#2a322a",
+                        "primary-container": "#22c55e",
+                        "on-primary": "#003915",
+                        "outline": "#869585",
+                        "on-surface-variant": "#bccbb9",
+                        "on-tertiary-fixed": "#410001",
+                        "secondary-fixed": "#d5e3fd",
+                        "surface-dim": "#0e150e",
+                        "surface-container-highest": "#2f372e",
+                        "on-secondary-fixed": "#0d1c2f",
+                        "secondary-container": "#3c4a5e",
+                        "inverse-primary": "#006e2f",
+                        "on-primary-fixed": "#002109",
+                        "surface-bright": "#333b33",
+                        "on-tertiary": "#60130d",
+                        "inverse-surface": "#dce5d9",
+                        "on-surface": "#dce5d9",
+                        "surface-container-lowest": "#091009",
+                        "on-secondary": "#233144",
+                        "on-primary-container": "#004b1e",
+                        "primary": "#4be277",
+                        "primary-fixed-dim": "#4ae176",
+                        "on-secondary-fixed-variant": "#3a485c",
+                        "on-tertiary-container": "#76231b",
+                        "tertiary": "#ffb5ab",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#ff8b7c",
+                        "on-primary-fixed-variant": "#005321",
+                        "surface": "#0e150e",
+                        "secondary": "#b9c7e0",
+                        "surface-container": "#1a221a",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#7f2a21",
+                        "outline-variant": "#3d4a3d",
+                        "primary-fixed": "#6bff8f",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "on-background": "#dce5d9",
+                        "secondary-fixed-dim": "#b9c7e0",
+                        "on-error": "#690005",
+                        "surface-container-low": "#161d16"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-padding": "24px",
+                        "board-max-width": "800px",
+                        "touch-target": "44px",
+                        "unit": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "status-number": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "body-base": ["Hanken Grotesk"],
+                        "label-caps": ["JetBrains Mono"],
+                        "display-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "status-number": ["20px", { "lineHeight": "1.0", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-base": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-base selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar Shared Component -->
+<header class="flex justify-between items-center px-container-padding h-[64px] w-full fixed top-0 z-50 bg-surface-container dark:bg-surface-container border-b-2 border-outline-variant">
+<div class="font-display-lg text-[24px] font-extrabold text-primary dark:text-primary tracking-widest truncate max-w-[30%]">SNAKE SUPERVISOR DOMGUARD</div>
+<nav class="hidden md:flex gap-8 items-center h-full">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors flex items-center h-full px-2 rounded-none" href="#">GAME</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors flex items-center h-full px-2 rounded-none" href="#">MENU</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors flex items-center h-full px-2 rounded-none" href="#">CONTROLS</a>
+<a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-label-caps text-label-caps hover:text-primary-fixed hover:bg-surface-variant transition-colors flex items-center h-full px-2 rounded-none mt-[2px]" href="#">SETTINGS</a>
+</nav>
+<div class="flex gap-2">
+<button class="h-touch-target w-touch-target flex items-center justify-center hover:bg-surface-variant transition-colors rounded-none text-primary dark:text-primary font-headline-md text-headline-md tracking-tighter active:scale-95 duration-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+</button>
+<button class="h-touch-target w-touch-target flex items-center justify-center hover:bg-surface-variant transition-colors rounded-none text-primary dark:text-primary font-headline-md text-headline-md tracking-tighter active:scale-95 duration-100">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 pt-[88px] pb-container-padding px-container-padding flex justify-center w-full">
+<div class="w-full max-w-board-max-width flex flex-col gap-6">
+<!-- Page Header -->
+<div class="border-b border-outline-variant pb-4 mb-2">
+<h1 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">System Configuration</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-2">Adjust Supervisor Telemetry &amp; Operational Parameters</p>
+</div>
+<!-- Settings Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Audio Settings Panel -->
+<section class="bg-surface-container border border-outline-variant p-6 flex flex-col gap-6 rounded-none relative group">
+<div class="absolute top-0 right-0 w-3 h-3 border-t border-r border-outline-variant m-2 opacity-50"></div>
+<header class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+<h2 class="font-label-caps text-label-caps text-on-surface tracking-widest">AUDIO TELEMETRY</h2>
+</header>
+<div class="flex flex-col gap-4">
+<!-- SFX Toggle -->
+<label class="flex justify-between items-center cursor-pointer min-h-touch-target group/toggle">
+<span class="font-body-base text-body-base text-on-surface-variant group-hover/toggle:text-on-surface transition-colors">Sound Effects (SFX)</span>
+<div class="relative">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant border border-outline-variant rounded-none peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary peer-checked:after:translate-x-[24px] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-outline-variant after:border after:rounded-none after:h-[18px] after:w-[20px] after:transition-all peer-checked:bg-primary/20 peer-checked:border-primary peer-checked:after:bg-primary"></div>
+</div>
+</label>
+<div class="h-[1px] w-full bg-outline-variant/30"></div>
+<!-- Music Toggle -->
+<label class="flex justify-between items-center cursor-pointer min-h-touch-target group/toggle">
+<span class="font-body-base text-body-base text-on-surface-variant group-hover/toggle:text-on-surface transition-colors">Background Music</span>
+<div class="relative">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-variant border border-outline-variant rounded-none peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary peer-checked:after:translate-x-[24px] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface-variant after:border-outline-variant after:border after:rounded-none after:h-[18px] after:w-[20px] after:transition-all peer-checked:bg-primary/20 peer-checked:border-primary peer-checked:after:bg-primary"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Game Speed Panel -->
+<section class="bg-surface-container border border-outline-variant p-6 flex flex-col gap-6 rounded-none relative group">
+<div class="absolute top-0 right-0 w-3 h-3 border-t border-r border-outline-variant m-2 opacity-50"></div>
+<header class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">speed</span>
+<h2 class="font-label-caps text-label-caps text-on-surface tracking-widest">OPERATIONAL CLOCK</h2>
+</header>
+<div class="grid grid-cols-2 gap-2 mt-auto">
+<!-- Slow -->
+<label class="cursor-pointer">
+<input class="sr-only peer" name="game_speed" type="radio"/>
+<div class="h-touch-target flex items-center justify-center border border-outline-variant bg-surface-variant text-on-surface-variant font-label-caps text-label-caps rounded-none peer-checked:bg-primary/10 peer-checked:text-primary peer-checked:border-primary hover:bg-surface-bright transition-colors">SLOW</div>
+</label>
+<!-- Normal -->
+<label class="cursor-pointer">
+<input checked="" class="sr-only peer" name="game_speed" type="radio"/>
+<div class="h-touch-target flex items-center justify-center border border-outline-variant bg-surface-variant text-on-surface-variant font-label-caps text-label-caps rounded-none peer-checked:bg-primary/10 peer-checked:text-primary peer-checked:border-primary hover:bg-surface-bright transition-colors">NORMAL</div>
+</label>
+<!-- Fast -->
+<label class="cursor-pointer">
+<input class="sr-only peer" name="game_speed" type="radio"/>
+<div class="h-touch-target flex items-center justify-center border border-outline-variant bg-surface-variant text-on-surface-variant font-label-caps text-label-caps rounded-none peer-checked:bg-primary/10 peer-checked:text-primary peer-checked:border-primary hover:bg-surface-bright transition-colors">FAST</div>
+</label>
+<!-- Turbo -->
+<label class="cursor-pointer">
+<input class="sr-only peer" name="game_speed" type="radio"/>
+<div class="h-touch-target flex items-center justify-center border border-outline-variant bg-surface-variant text-on-surface-variant font-label-caps text-label-caps rounded-none peer-checked:bg-error/10 peer-checked:text-error peer-checked:border-error hover:bg-surface-bright transition-colors relative overflow-hidden group/turbo">
+<span class="relative z-10">TURBO</span>
+<div class="absolute inset-0 bg-error/5 opacity-0 group-hover/turbo:opacity-100 transition-opacity"></div>
+</div>
+</label>
+</div>
+</section>
+<!-- Data Management (Danger Zone) -->
+<section class="bg-surface-container border border-error/50 p-6 flex flex-col gap-6 rounded-none md:col-span-2 relative overflow-hidden mt-4">
+<!-- Warning Stripes Background -->
+<div class="absolute inset-0 opacity-[0.02] pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #ffb4ab 0, #ffb4ab 2px, transparent 0, transparent 8px);"></div>
+<header class="flex items-center gap-3 relative z-10">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h2 class="font-label-caps text-label-caps text-error tracking-widest">DATA DESTRUCTION</h2>
+</header>
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative z-10">
+<div class="flex flex-col gap-1 max-w-lg">
+<span class="font-body-base text-body-base text-on-surface">Purge Local Telemetry Records</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant opacity-80">IRREVERSIBLY DELETE ALL SAVED HIGH SCORES AND PERFORMANCE METRICS. REQUIRE MANUAL CONFIRMATION.</span>
+</div>
+<!-- Reset Button -->
+<button class="h-touch-target px-6 border-2 border-error bg-transparent text-error font-label-caps text-label-caps rounded-none hover:bg-error hover:text-on-error transition-all flex items-center gap-2 flex-shrink-0 group focus:outline-none focus:ring-2 focus:ring-error focus:ring-offset-2 focus:ring-offset-background active:scale-95 duration-100 relative overflow-hidden">
+<span class="material-symbols-outlined text-[18px] group-hover:animate-pulse">delete_forever</span>
+<span>RESET HIGH SCORE</span>
+<!-- Hover state hint for "confirmation" -->
+<div class="absolute inset-0 bg-error flex items-center justify-center text-on-error font-label-caps opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined text-[18px] mr-2">priority_high</span>
+                                CONFIRM PURGE
+                            </div>
+</button>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer Shared Component -->
+<footer class="w-full py-4 px-container-padding flex justify-between items-center bg-background dark:bg-background border-t border-outline-variant z-40 mt-auto">
+<div class="text-primary font-bold font-label-caps text-label-caps">
+            © 2024 DOMGUARD INDUSTRIAL ARCADE SYSTEMS
+        </div>
+<div class="flex gap-6">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Service Status</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-colors" href="#">Documentation</a>
+</div>
+</footer>
+</body></html>
